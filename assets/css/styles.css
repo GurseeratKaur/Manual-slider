@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/*  Image slider */
+.slider {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #23E3C9;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{ 
+    width: 90%;
+    margin: 0 5%;
+
+    height: 500px;
+    object-fit: cover;
+}
+
+#first img{
+    object-position: 50% 50%;
+}
+#second img{
+
+    object-position: 50% 50%;
+}
+#third img{
+    object-position: 50% 55%;
+}
+#fourth img{
+    object-position: 50% 75%;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* manual sliding functionality */
+
+.manual-slider {
+    position: absolute;
+    width: 100%;
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border:  0.125em solid #40D3DC;
+    padding: 0.3em;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: 1s;
+
+}
+
+.manual-btn:hover{
+    background-color: #40D3DC;
+}
+.manual-btn:not(:last-child) {
+    margin-right: 3em;
+}
