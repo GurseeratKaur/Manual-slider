@@ -66,6 +66,18 @@
     margin-left: -60%;
 }
 
+#radio1:checked ~ .manual-slider .manual-btn[for="radio1"] {
+    background-color: #40D3DC;
+}
+#radio2:checked ~ .manual-slider .manual-btn[for="radio2"] {
+    background-color: #40D3DC;
+}
+#radio3:checked ~ .manual-slider .manual-btn[for="radio3"] {
+    background-color: #40D3DC;
+}
+#radio4:checked ~ .manual-slider .manual-btn[for="radio4"] {
+    background-color: #40D3DC;
+}
 /* manual sliding functionality */
 
 .manual-slider {
@@ -77,6 +89,7 @@
 }
 
 .manual-btn {
+    /* background-color: #40D3DC; */
     border:  0.125em solid #40D3DC;
     padding: 0.3em;
     border-radius: 10px;
